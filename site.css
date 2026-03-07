@@ -1,0 +1,72 @@
+:root {
+	--bg-color: hsl(232, 30%, 25%);
+	--bg-darker: hsl(232, 30%, 20%);
+	--bg-darkest: hsl(232, 30%, 15%);
+
+	--acent-color: hsl(79, 78%, 81%);
+	--color: hsl(60, 50%, 95%);
+
+	--spacing-small: 1em;
+	--spacing-medium: 2em;
+	--spacing-large: 4em;
+	--spacing-xlarge: 8em;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 80%;
+	margin: auto;
+	background-color: var(--bg-color);
+	color: var(--color);
+}
+
+hr {
+	color: var(--bg-darkest);
+	margin: var(--spacing-large);
+}
+
+a {
+	color: var(--color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+h1 {
+	margin-top: var(--spacing-large);
+}
+
+h2 {
+	margin-top: var(--spacing-medium);
+}
+
+.hero-container {
+	text-align: center;
+	margin: var(--spacing-large);
+}
+
+.card {
+	margin: var(--spacing-medium);
+	padding: var(--spacing-medium);
+	background-color: var(--bg-darker);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.card > h2 {
+	margin: 0;
+}
+
+.card:hover {
+	background-color: var(--bg-darkest);
+}
